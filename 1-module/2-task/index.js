@@ -1,16 +1,12 @@
-/**
- * Эту функцию трогать не нужно
- */
 function print(text) {
   console.log(text);
 }
 
-/**
- * Эту функцию нужно поменять так,
- * чтобы функция sayHello работала корректно
- */
 function isValid(name) {
-  // ваш код...
+  if (typeof name !== 'string' || name === null) {
+    return false;
+  }
+  return /^[^\s]{4,}$/.test(name);
 }
 
 function sayHello() {
