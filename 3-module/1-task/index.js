@@ -10,4 +10,3 @@
   }
   
   let names = namify(users);
-//}
