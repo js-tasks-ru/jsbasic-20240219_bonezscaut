@@ -3,10 +3,7 @@ function print(text) {
 }
 
 function isValid(name) {
-  if (typeof name !== 'string' || name === null) {
-    return false;
-  }
-  return /^[^\s]{4,}$/.test(name);
+  return !!name && !name.includes(' ') && name.length >= 4;
 }
 
 function sayHello() {
