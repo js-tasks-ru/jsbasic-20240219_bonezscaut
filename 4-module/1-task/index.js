@@ -25,4 +25,3 @@ let friends = [
     }
 ];
 
-document.body.appendChild(createFriendsList(friends));
